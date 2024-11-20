@@ -15,27 +15,33 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
   <div align="center">
 
   ![Home-Page1](img/Home-Page.png)
-  ![Home-Page1](/img/home-page-2.png)
-  ![Home-Page1](/img/home-page-3.png)
+  ![Home-Page2](/img/home-page-2.png)
+  ![Home-Page3](/img/home-page-3.png)
 
   </div>
 
-  <img src="/img/Home-Page.png">
-  <img src="/img/home-page-2.png">
-  <img src="/img/home-page-3.png">
-
-
-
 - **Página de Categorias**  
   Exibe diferentes categorias de hambúrgueres para facilitar a navegação.
-  <img src="/img/category-page.png">
-  <img src="/img/category-page-2.png">
+
+    <div align="center">
+
+  ![Category-page1](/img/category-page.png)
+  ![Category-page2](/img/home-page-2.png)
+
+  </div>
+
 
 
 - **Página de Produtos**  
   Lista os produtos disponíveis em cada categoria, permitindo visualizar as opções.
-    <img src="/img/product-page.png">
-  <img src="/img/product-page-2.png">
+
+  <div align="center">
+
+  ![Product-page1](/img/product-page.png)
+  ![Product-page2](/img/product-page-2.png)
+
+  </div>
+
 
 - **Detalhes do Produto**  
   Fornece informações detalhadas sobre um produto específico.
