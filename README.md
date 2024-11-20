@@ -12,8 +12,8 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 - **Página Inicial**  
   Página de apresentação.
-  ![Home-Page](![image](https://github.com/user-attachments/assets/07c1943a-293e-4c7d-9500-372d3f8c13da)
-)
+ ![Home-Page](ImagesReadme/Home-Page.png)
+
 
 
 - **Página de Categorias**  
