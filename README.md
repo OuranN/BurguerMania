@@ -12,7 +12,7 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 - **Página Inicial**  
   Página de apresentação.
- ![Home-Page]([ImagesReadme/Home-Page.png](https://cdn.discordapp.com/attachments/1064597480144130159/1308895483728494592/Home-Page.png?ex=673f9b69&is=673e49e9&hm=eed1b934c040e1ae0549b129ca11d6f3e37c56a535b28a991f416a072019dbf0&))
+<img src="/img/Home-Page.png">
 
 
 
