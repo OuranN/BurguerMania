@@ -27,6 +27,7 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
   ![Category-page1](/img/category-page.png)
   ![Category-page2](/img/category-page-2.png)
+   ![Category-page2](/img/category-page-3.png)
 
   </div>
 
