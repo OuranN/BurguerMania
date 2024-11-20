@@ -4,7 +4,7 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 ## 📖 Descrição
 
-**Burguer Mania** é uma aplicação web desenvolvida em Angular. A aplicação inclui páginas interativas e dinâmicas para exibir categorias de hamburgueres, produtos, e realizar pedidos.
+**Burguer Mania** é uma aplicação web front-end desenvolvida em Angular. A aplicação inclui páginas interativas e dinâmicas para exibir categorias de hamburgueres, produtos, e realizar pedidos.
 
 ---
 
@@ -12,6 +12,9 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 - **Página Inicial**  
   Página de apresentação.
+  ![Home-Page](![image](https://github.com/user-attachments/assets/07c1943a-293e-4c7d-9500-372d3f8c13da)
+)
+
 
 - **Página de Categorias**  
   Exibe diferentes categorias de hambúrgueres para facilitar a navegação.
