@@ -36,7 +36,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) e o [Angular CLI](https://
 ## 🖥️ Como executar o projeto
 
 1. Instale as dependências
-   rode o comando abaixo para instalar as dependências:
+   -rode o comando abaixo para instalar as dependências:
    ```bash
    npm install
 
