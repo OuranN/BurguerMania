@@ -29,7 +29,7 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 - **Detalhes do Produto**  
   Fornece informações detalhadas sobre um produto específico.
-      <img src="/img/detaiils-page.png">
+      <img src="/img/details-page.png">
       <img src="/img/details-page-2.png">
 
 - **Página de Pedidos**
