@@ -38,7 +38,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) e o [Angular CLI](https://
 1. Instale as dependências
    rode o comando abaixo para instalar as dependências:
    ```bash
-npm install
+   npm install
 
    
 3. Inicie o servidor de desenvolvimento
