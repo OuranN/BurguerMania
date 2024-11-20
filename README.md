@@ -12,12 +12,18 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 - **Página Inicial**  
   Página de apresentação.
+  <div align="center">
 
-  <div style="text-align: center;">
+  ![Home-Page1](img/Home-Page.png)
+  ![Home-Page1](/img/home-page-2.png)
+  ![Home-Page1](/img/home-page-3.png)
+
+  </div>
+
   <img src="/img/Home-Page.png">
-<img src="/img/home-page-2.png">
-<img src="/img/home-page-3.png">
-</div>
+  <img src="/img/home-page-2.png">
+  <img src="/img/home-page-3.png">
+
 
 
 - **Página de Categorias**  
