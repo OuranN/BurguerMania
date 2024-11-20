@@ -1,0 +1,30 @@
+<div id="pedido-containner">
+
+  <h2>Pedido</h2>
+
+  <div id="content">
+    <form id="product-form">
+
+      <div id="div1">
+
+        <div class="produto">
+          <app-input textLabel ="Produto" inputName="product" [isTextarea]="false" [required]="true"></app-input>
+          <app-input textLabel ="Produto" inputName="product" [isTextarea]="false" [required]="true"></app-input>
+        </div>
+   
+       <div class="quantidade">
+        <app-input textLabel ="Quantidade" inputName="quantity" [isTextarea]="false" [required]="true"></app-input>
+        <app-input textLabel ="Quantidade" inputName="quantity" [isTextarea]="false" [required]="true"></app-input>
+       </div>
+
+      </div>
+      
+      <div class="observacao">
+        <app-input textLabel="Observações" inputName="observations" [isTextarea]="true" [required]="true"></app-input>
+      </div>
+     
+      <app-button1>FINALIZAR</app-button1>
+    </form>
+  
+  </div>
+</div>

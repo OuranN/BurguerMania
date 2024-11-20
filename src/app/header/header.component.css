@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header-containner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 76px 0px 76px;
+  margin-top: 41px;
+  margin-bottom: 7.4rem;
+}
+
+@media (max-width: 1100px) {
+  #header-containner{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  #header-containner{
+    margin: 0px;
+  }
+}

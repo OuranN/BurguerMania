@@ -1,0 +1,20 @@
+<div id="category-containner">
+  <div id="content">
+    <h2>Cardápio</h2>
+
+    <div id="cards">
+
+      <app-card 
+        *ngFor="let categoria of displayedCategories"
+        [card]="categoria"
+        [isSelected]="selectedCategory === categoria.name"
+        (click)="goToProductPage(categoria.name)">
+      </app-card>
+    </div>
+
+    <app-button-large  (click)="showFullMenu()">{{buttonText}}</app-button-large>
+  </div>
+  
+</div>
+
+

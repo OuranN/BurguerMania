@@ -1,0 +1,67 @@
+#pedido-containner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content{
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.208);
+  width:1007px ;
+  height: 754px;
+  padding: 4em;
+  margin-top: 2.56rem;
+}
+
+h2{
+  font: var(--fontH2);
+  color: var(--font-color3);
+  text-transform: uppercase;
+}
+
+#product-form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.produto{
+  display: flex;
+  flex-direction: column;
+}
+
+.quantidade{
+  display: flex;
+  flex-direction: column;
+}
+
+#div1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  #div1{
+    flex-direction: column;
+  }
+
+  #content{
+    width:auto;
+    height: auto;
+    margin-bottom: 3em;
+  }
+
+  #product-form{
+    flex-direction: column;
+
+  }
+
+  app-button1{
+    margin-top: 3em;
+  }
+ 
+}

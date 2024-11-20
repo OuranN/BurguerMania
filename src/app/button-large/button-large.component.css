@@ -1,0 +1,23 @@
+button{
+  background-color: var(--button-color1);
+  color: var(--font-color1);
+  font: var(--font1);
+  width: var(--button-large-width);
+  height: var(--button-large-height);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover{
+  opacity: 0.8;
+ }
+
+
+ 
+ @media (max-width: 400px) {
+  button{
+    width: 100%;
+    padding: 1em;
+  }
+}

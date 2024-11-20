@@ -1,0 +1,50 @@
+input{
+  display: flex;
+  flex-direction: column;
+  width: 396px;
+  height: 57px;
+  border: 1px solid rgba(0, 0, 0, 0.208);
+  margin-bottom: 2em;
+  margin-top: 1em;
+  padding: 1em;
+  font: var(--fontP);
+}
+
+label{
+  font: var(--fontLabel);
+  color: var(--font-color4);
+}
+
+
+textarea{
+  width: 882px;
+  height:136px ;
+  border: 1px solid rgba(0, 0, 0, 0.208);
+  padding: 1em;
+  resize: none;
+  font: var(--fontP);
+  margin-top: 1em;
+}
+
+.required-asterisk {
+  color: red;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  textarea{
+    width: 396px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  textarea{
+    width: 356px;
+
+  }
+
+  input{width: 356px;}
+}

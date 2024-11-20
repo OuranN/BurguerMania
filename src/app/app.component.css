@@ -1,0 +1,27 @@
+#home-containner{
+  display: flex;
+  flex-direction: column;
+}
+
+#buttons-containner{
+  align-self: center;
+  margin-top: 4.4rem;
+}
+
+img{
+  width: 52.2rem;
+  height: 27.6rem;
+  align-self: center;
+  margin-top: 4.4rem;
+}
+
+h2{
+  align-self: center;
+  font: var(--fontH2);
+  color: var(--font-color3);
+  text-transform: uppercase;
+  margin-top: 5.5rem;
+  font-size: 2.8rem;
+
+}
+

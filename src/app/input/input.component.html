@@ -1,0 +1,28 @@
+<div>
+  <label 
+    [for]="inputName">{{ textLabel }}
+    <span *ngIf="required && !hasContent" class="required-asterisk">*</span>
+
+  </label>
+
+
+  <input
+    *ngIf="!isTextarea"
+    type="text"
+    [id]="inputName"
+    [name]="inputName"
+    required
+    [(ngModel)]="fieldValue"
+    (ngModelChange)="checkContent()"
+  />
+
+  <textarea
+    *ngIf="isTextarea"
+    [id]="inputName"
+    [name]="inputName"
+    required
+    [(ngModel)]="fieldValue"
+    (ngModelChange)="checkContent()"
+  ></textarea>
+</div>
+

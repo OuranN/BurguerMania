@@ -1,0 +1,15 @@
+button{
+  background-color: var(--button-color1);
+  color: var(--font-color1);
+  font: var(--font1);
+  width: var(--buttonHome-width);
+  height: var(--buttonHome-height);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1em;
+
+}
+
+button:hover{
+ opacity: 0.8;
+}

@@ -1,0 +1,14 @@
+<div id="product-containner">
+  <div id="content">
+    <h2>{{selectedCategory}}</h2>
+
+    <div id="cards">
+      <div *ngFor="let burger of displayedBurguers">
+        <app-card [card]="burger"  (click)="goToDetailsPage(burger)"></app-card>
+      </div>
+    </div>
+    <app-button-large (click)="toggleMenu()">{{buttonText}}</app-button-large>
+
+</div>
+
+

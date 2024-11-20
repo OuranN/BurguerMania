@@ -1,0 +1,16 @@
+button{
+  background-color: var(--button-color2);
+  color: var(--font-color2);
+  border:var(--border1);
+  font: var(--font1);
+  width: var(--buttonHome-width);
+  height: var(--buttonHome-height);
+  cursor: pointer;
+  margin-left: 45px;
+}
+
+@media (max-width: 750px) {
+  button{
+    margin-left: 0px;
+  }
+}

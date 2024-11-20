@@ -1,0 +1,25 @@
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: var(--border2);
+  width: 606px;
+  padding: 2em;
+}
+
+h3{
+  font: var(--fontH3);
+  margin-bottom: 1em;
+
+}
+
+p{
+  font: var(--fontP);
+  text-align: justify;
+}
+
+@media (max-width: 750px) {
+  .details{
+    width: auto;
+  }
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+  --button-color1: #ED0000;
+  --button-color2: #FFFFFF;
+  --font-color1:#FFFFFF;
+  --font-color2: #521D16;
+  --font-color3: #ED0000;
+  --font-color4: #000000;
+  --border1: 1px solid #ED0000;
+  --border2: 1px solid rgba(0, 0, 0, 0.208);
+  --font1: bold larger "Inter", sans-serif;
+  --fontLink: bold 1.4rem "Inter", sans-serif;
+  --fontPrice: bold 45px "Inter", sans-serif;
+  --fontLabel: 1.4rem "Inter", sans-serif;
+  --fontH2: bold 2.81rem "Inter", sans-serif;
+  --fontH3: bold 2rem "Inter", sans-serif;
+  --fontP: 500 1.25rem "Inter", sans-serif;
+  --button-padding:1.3rem 3rem 1.3rem 3rem; 
+  --buttonHome-width: 16rem;
+  --buttonHome-height:4.12rem;
+  --button-large-width:25.25rem;
+  --button-large-height:4.62rem
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

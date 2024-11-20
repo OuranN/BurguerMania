@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 336px; 
+  height: 335px;
+  min-width: 250px; 
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.card.selected {
+  border: var(--border1);
+}
+
+.card:hover{
+  border: var(--border1);
+  border-radius:0.4em ;
+}
+
+h3{
+  font: var(--fontH3);
+  color: var(--font-color2);
+}
+
+p{
+  font: var(--fontP);
+  color: var(--font-color4);
+  margin-top: 1.4rem;
+}
+
+img{
+  width: 60%;
+
+}
+
