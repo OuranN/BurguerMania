@@ -4,26 +4,26 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 ## 📖 Descrição
 
-**Burguer Mania** é uma aplicação web desenvolvida em Angular que permite aos usuários explorar e realizar pedidos de hambúrgueres deliciosos. A aplicação inclui páginas interativas e dinâmicas para exibir categorias, produtos, e realizar pedidos.
+**Burguer Mania** é uma aplicação web desenvolvida em Angular. A aplicação inclui páginas interativas e dinâmicas para exibir categorias de hamburgueres, produtos, e realizar pedidos.
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Páginas
 
-- **Página Inicial (Home Page)**  
-  Apresenta um resumo das categorias de produtos e promoções em destaque.
+- **Página Inicial**  
+  Página de apresentação.
 
-- **Página de Categorias (Categoria Page)**  
+- **Página de Categorias**  
   Exibe diferentes categorias de hambúrgueres para facilitar a navegação.
 
-- **Página de Produtos (Produtos Page)**  
+- **Página de Produtos**  
   Lista os produtos disponíveis em cada categoria, permitindo visualizar as opções.
 
-- **Detalhes do Produto (Detalhes do Produto)**  
-  Fornece informações detalhadas sobre um produto específico, como ingredientes e preços.
+- **Detalhes do Produto**  
+  Fornece informações detalhadas sobre um produto específico.
 
-- **Página de Pedidos (Pedido Page)**  
-  Permite ao usuário revisar, confirmar e finalizar o pedido.
+- **Página de Pedidos**  
+
 
 ---
 
@@ -37,12 +37,14 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) e o [Angular CLI](https://
 
 1. Instale as dependências
    rode o comando abaixo para instalar as dependências:
-   npm install
+   ```bash
+npm install
+
    
 3. Inicie o servidor de desenvolvimento
-
    Execute o comando:
-    ng s
-4. Navegue para http://localhost:4200/ no seu navegador.
+      ```bash
+      ng s
+5. Navegue para http://localhost:4200/ no seu navegador.
   
 
