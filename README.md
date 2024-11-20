@@ -12,9 +12,13 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 
 - **Página Inicial**  
   Página de apresentação.
-<img src="/img/Home-Page.png">
+
+  <div style="text-align: center;">
+  <img src="/img/Home-Page.png">
 <img src="/img/home-page-2.png">
 <img src="/img/home-page-3.png">
+</div>
+
 
 - **Página de Categorias**  
   Exibe diferentes categorias de hambúrgueres para facilitar a navegação.
