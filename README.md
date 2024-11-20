@@ -1,27 +1,48 @@
-# BurguerManis
+# Burguer Mania 🍔
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 18.2.5.
 
-## Development server
+## 📖 Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Burguer Mania** é uma aplicação web desenvolvida em Angular que permite aos usuários explorar e realizar pedidos de hambúrgueres deliciosos. A aplicação inclui páginas interativas e dinâmicas para exibir categorias, produtos, e realizar pedidos.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Funcionalidades
 
-## Build
+- **Página Inicial (Home Page)**  
+  Apresenta um resumo das categorias de produtos e promoções em destaque.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Página de Categorias (Categoria Page)**  
+  Exibe diferentes categorias de hambúrgueres para facilitar a navegação.
 
-## Running unit tests
+- **Página de Produtos (Produtos Page)**  
+  Lista os produtos disponíveis em cada categoria, permitindo visualizar as opções.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Detalhes do Produto (Detalhes do Produto)**  
+  Fornece informações detalhadas sobre um produto específico, como ingredientes e preços.
 
-## Running end-to-end tests
+- **Página de Pedidos (Pedido Page)**  
+  Permite ao usuário revisar, confirmar e finalizar o pedido.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 🛠️ Pré-requisitos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Certifique-se de ter o [Node.js](https://nodejs.org/) e o [Angular CLI](https://angular.io/cli) instalados em sua máquina antes de começar.
+
+---
+
+## 🖥️ Como executar o projeto
+
+1. Instale as dependências
+   rode o comando abaixo para instalar as dependências:
+   npm install
+   
+3. Inicie o servidor de desenvolvimento
+
+   Execute o comando:
+    ng s
+4. Navegue para http://localhost:4200/ no seu navegador.
+  
+
