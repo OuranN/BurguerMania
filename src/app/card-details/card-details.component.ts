@@ -10,6 +10,6 @@ import { Burguer } from '../interfaces/burguer.interface';
 })
 export class CardDetailsComponent {
   @Input() card!:Burguer; 
-  @Input() isSelected: boolean = false; // Define se o card está selecionado
+  @Input() isSelected: boolean = false; 
 
 }

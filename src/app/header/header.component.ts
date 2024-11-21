@@ -10,7 +10,6 @@ import { NavBarComponent } from "../nav-bar/nav-bar.component";
 })
 export class HeaderComponent {
   
-  //Variaveis
   restaurantName:string = 'Burguer Mania';
 
 }

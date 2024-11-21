@@ -3,9 +3,8 @@ import { Burguer } from '../../interfaces/burguer.interface';
 import { CardComponent } from "../../card/card.component";
 import { NgFor } from '@angular/common';
 import { ButtonLargeComponent } from "../../button-large/button-large.component";
-import { Router } from '@angular/router';  // Certifique-se de importar o Router
-import { ActivatedRoute } from '@angular/router';  // Importação do ActivatedRoute
-
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-product-page',
   standalone: true,
@@ -91,12 +90,12 @@ export class ProductPageComponent {
   ]
 
   selectedCategory: string = '';
-  showAllBurgers: boolean = false; // Controla se o menu está expandido ou minimizado
+  showAllBurgers: boolean = false;
   buttonText: string = "Ver cardápio completo";
   displayedBurguers: Burguer[] = [];
   toggleBoolean: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {  // Injeção do Router aqui
+  constructor(private route: ActivatedRoute, private router: Router) {  
     this.route.params.subscribe(params => {
       this.selectedCategory = params['categoryName'];
     });

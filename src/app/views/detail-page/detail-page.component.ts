@@ -15,7 +15,6 @@ import { CardDetailsComponent } from "../../card-details/card-details.component"
 })
 export class DetailPageComponent implements OnInit {
 
-  // Array de burgers para busca
   burguers: Burguer[] = [
     { 
       name: 'X-Alface-Premium', 

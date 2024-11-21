@@ -15,8 +15,8 @@ import { Category } from '../interfaces/Category.interface';
 export class CardComponent {
 
   @Input() card!:Category; 
-  @Input() isSelected: boolean = false; // Define se o card está selecionado
-  @Output() select = new EventEmitter<void>(); // Notifica o parent quando clicado
+  @Input() isSelected: boolean = false;
+  @Output() select = new EventEmitter<void>(); 
 
   onSelect() {
     this.select.emit();
