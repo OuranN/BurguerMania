@@ -5,6 +5,8 @@ import { NgFor } from '@angular/common';
 import { ButtonLargeComponent } from "../../button-large/button-large.component";
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { ProductService } from '../../services/product/product.service';
+
 @Component({
   selector: 'app-product-page',
   standalone: true,
@@ -14,119 +16,63 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductPageComponent {
 
-  burguers: Burguer[] = [  
-    {
-      name: 'X-Alface-Premium',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 35.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Vegan',
-    },
-    {
-      name: 'X-Tomate',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 35.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Vegan',
-    },
-    {
-      name: 'X-Frutas',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 35.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Vegan',
-    },{
-      name: 'X-ExtraVegan',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 0.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Vegan',
-    },{
-      name: 'X-ExtraVegan',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 0.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Vegan',
-    },{
-      name: 'X-ExtraVegan',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 0.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Vegan',
-    },
-    {
-      name: 'X-Dieta',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 35.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Fitnnes',
-    },{
-      name: 'X-Dieta',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 35.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Fitnnes',
-    },{
-      name: 'X-Dieta',
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      price: 35.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Fitnnes',
-    },
-    {
-      name: 'X-Bacon',
-      description:'Pão, Habúrguer, bacon, queijo e maionese' ,
-      price: 40.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Infarto',
-    },
-    {
-      name: 'X-Picanha',
-      description:'Pão, Habúrguer de picanha, alface, queijo e maionese' ,
-      price: 45.00,
-      imageUrl: '/images/hamburguer.png',
-      category: 'X-Infarto',
-    },
-  ]
-
-  selectedCategory: string = '';
+  burguers: Burguer[] = [];
+  selectCategory:string ='';
+  selectedCategory: number = 12;
   showAllBurgers: boolean = false;
   buttonText: string = "Ver cardápio completo";
   displayedBurguers: Burguer[] = [];
   toggleBoolean: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {  
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private productService: ProductService
+  ) {
     this.route.params.subscribe(params => {
-      this.selectedCategory = params['categoryName'];
+      this.selectCategory=params['categoryName'];
+
+      if(this.selectCategory=='X-Vegan'){
+        this.selectedCategory = 12; // Converte para número
+      } else {if(this.selectCategory=='X-Fitnnes'){
+        this.selectedCategory = 13; // Converte para número
+      }else{if(this.selectCategory=='X-Infarto'){
+        this.selectedCategory = 14; // Converte para número
+      }else{this.selectedCategory = 15;}}
+      }
+      this.getProducts(); // Carrega produtos com base na categoria
     });
-    this.displayedBurguers = this.getFilteredBurgers().slice(0, 3);
+  }
+
+  getProducts() {
+    this.productService.getAllProducts().subscribe(
+      (burguers) => {
+        console.log('Produtos recebidos:', burguers);
+        this.burguers = burguers;
+        this.updateDisplayedBurguers(); // Atualiza exibição inicial
+      },
+      error => console.error('Erro ao carregar produtos:', error)
+    );
+  }
+
+  updateDisplayedBurguers() {
+    const filteredBurguers = this.getFilteredBurgers();
+    this.displayedBurguers = this.toggleBoolean ? filteredBurguers : filteredBurguers.slice(0, 3);
   }
 
   toggleMenu() {
-    if(this.toggleBoolean){
-      this.displayedBurguers = this.getFilteredBurgers().slice(0, 3);
-      this.toggleBoolean=false;
-    }else{
-      this.displayedBurguers = this.getFilteredBurgers();
-      this.toggleBoolean=true;
-    }
-    this.showAllBurgers = !this.showAllBurgers;
-    this.buttonText = this.showAllBurgers ? "Minimizar Cardápio" : "Ver cardápio completo";
+    this.toggleBoolean = !this.toggleBoolean;
+    this.updateDisplayedBurguers();
+    this.buttonText = this.toggleBoolean ? "Minimizar Cardápio" : "Ver cardápio completo";
   }
-  
-
 
   getFilteredBurgers() {
-    return this.burguers.filter(burger => burger.category === this.selectedCategory);
-  }
-
-  changeCategory(category: string) {
-    this.selectedCategory = category;
+    console.log('Filtrando produtos para a categoria:', this.selectedCategory);
+    return this.burguers.filter(burger => burger.categoryId === this.selectedCategory);
   }
 
   goToDetailsPage(burger: Burguer) {
-    console.log(burger.name);
+    console.log('Burger selecionado:', burger.name);
     this.router.navigate(['/detalhes', burger.name]);
   }
-  
 }

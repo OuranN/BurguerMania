@@ -4,6 +4,7 @@ import { CardComponent } from '../../card/card.component';
 import { Category } from '../../interfaces/Category.interface';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { CategoryService } from '../../services/category/category.service';
 
 
 @Component({
@@ -14,48 +15,28 @@ import { Router } from '@angular/router';
   styleUrl: './category-page.component.css'
 })
 export class CategoryPageComponent {
-  
-  categorias: Category[] = [  
-    {        
-      name: 'X-Vegan',     
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      imageUrl:'/images/hamburguer.png',
-    },
-    {         
-      name: 'X-Fitnnes',     
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      imageUrl:'/images/hamburguer.png',
-    },
-    {        
-      name: 'X-Infarto',     
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      imageUrl:'/images/hamburguer.png',
-    },
-    {       
-      name: 'Extra-Burguer',     
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      imageUrl:'/images/hamburguer.png',
-    },
-    {       
-      name: 'Extra-Burguer',     
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      imageUrl:'/images/hamburguer.png',
-    },
-    {       
-      name: 'Extra-Burguer',     
-      description:'Pão, Habúrguer, alface, tomate, queijo e maionese' ,
-      imageUrl:'/images/hamburguer.png',
-    }
-  ]
 
+  categorias : Category[]=[];
+
+ 
   selectedCategory: string | null = null;
   buttonText: string = "Ver cardápio completo"
-
   displayedCategories: Category[] = [];
   showAll: boolean = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private categoryService:CategoryService) {
+    this.getCategories();
     this.displayedCategories = this.categorias.slice(0, 3);
+  }
+
+  getCategories() {
+    this.categoryService.getAllCategories().subscribe(
+      (categorias) => {
+        this.categorias = categorias;
+        this.displayedCategories = this.categorias.slice(0, 3);  // Inicializa com as 3 primeiras categorias
+        console.log(this.categorias);
+      }
+    );
   }
 
   showFullMenu() {

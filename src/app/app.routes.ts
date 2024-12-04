@@ -6,6 +6,7 @@ import { ProductPageComponent } from './views/product-page/product-page.componen
 import { DetailPageComponent } from './views/detail-page/detail-page.component';
 
 
+
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },

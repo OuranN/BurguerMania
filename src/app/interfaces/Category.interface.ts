@@ -1,5 +1,6 @@
-export interface Category {         
+export interface Category { 
+  id?: number;        
   name: string;        
   description: string; 
-  imageUrl: string;
+  path_image: string;
 }

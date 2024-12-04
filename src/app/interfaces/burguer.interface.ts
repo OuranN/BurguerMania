@@ -1,8 +1,9 @@
-export interface Burguer { 
+export interface Burguer {
+  id: number;
   name: string;
-  description: string;
+  path_image: string;
   price: number;
-  imageUrl: string;
-  category: string;
-  completeDescription?:string;
+  description: string;
+  fullDescription: string;
+  categoryId: number;
 }

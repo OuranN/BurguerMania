@@ -1,5 +1,5 @@
 <div class="card" (click)="onSelect()" [ngClass]="{ 'selected': isSelected }">
-    <img [src]="card.imageUrl" alt="{{ card.name }}">
+    <img [src]="card.path_image" alt="{{ card.name }}">
     <h3>{{ card.name }}</h3>
     <p>{{ card.description }}</p>
 </div>
