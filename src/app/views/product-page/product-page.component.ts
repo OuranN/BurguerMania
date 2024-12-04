@@ -33,14 +33,14 @@ export class ProductPageComponent {
       this.selectCategory=params['categoryName'];
 
       if(this.selectCategory=='X-Vegan'){
-        this.selectedCategory = 12; // Converte para número
+        this.selectedCategory = 12; 
       } else {if(this.selectCategory=='X-Fitnnes'){
-        this.selectedCategory = 13; // Converte para número
+        this.selectedCategory = 13; 
       }else{if(this.selectCategory=='X-Infarto'){
-        this.selectedCategory = 14; // Converte para número
+        this.selectedCategory = 14; 
       }else{this.selectedCategory = 15;}}
       }
-      this.getProducts(); // Carrega produtos com base na categoria
+      this.getProducts(); 
     });
   }
 
@@ -49,7 +49,7 @@ export class ProductPageComponent {
       (burguers) => {
         console.log('Produtos recebidos:', burguers);
         this.burguers = burguers;
-        this.updateDisplayedBurguers(); // Atualiza exibição inicial
+        this.updateDisplayedBurguers(); 
       },
       error => console.error('Erro ao carregar produtos:', error)
     );

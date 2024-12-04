@@ -18,7 +18,6 @@ export class CategoryPageComponent {
 
   categorias : Category[]=[];
 
- 
   selectedCategory: string | null = null;
   buttonText: string = "Ver cardápio completo"
   displayedCategories: Category[] = [];
@@ -58,5 +57,4 @@ export class CategoryPageComponent {
   goToProductPage(categoryName: string) {
     this.router.navigate([`/produto/${categoryName}`]); 
   }
-
 }

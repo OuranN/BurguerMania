@@ -8,11 +8,8 @@ import { Category } from '../../interfaces/Category.interface';
 })
 
 export class CategoryService {
-
   private url = environment.api;
-
   constructor(private httpClient: HttpClient) { 
-
   }
 
   getAllCategories(){

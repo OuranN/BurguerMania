@@ -17,6 +17,4 @@ export class ProductService {
   getAllProducts(){
     return this.httpClient.get<Burguer[]>(this.url+ '/products')
   }
-
-  
 }
