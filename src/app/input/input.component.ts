@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-input',
@@ -16,11 +17,15 @@ export class InputComponent {
   @Input() isTextarea: boolean = false;
   @Input() required: boolean = false;
 
-
-  fieldValue: string = ''; 
+  @Output() fieldValueChange = new EventEmitter<string>();
+  @Output() fieldValueChangeNumber = new EventEmitter<number>();
+  fieldValue: string  = ''; 
+  fieldValueNumber?: number; 
   hasContent: boolean = false; 
 
   checkContent() {
     this.hasContent = this.fieldValue.trim().length > 0;
+    this.fieldValueChange.emit(this.fieldValue);
+    this.fieldValueChangeNumber.emit(this.fieldValueNumber);
   }
 }
