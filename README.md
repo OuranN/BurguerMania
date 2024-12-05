@@ -75,3 +75,8 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) e o [Angular CLI](https://
 5. Navegue para http://localhost:4200/ no seu navegador.
   
 
+## 🖥 Detalhes da execução
+
+1. Na página de realizar pedido o nome do Produto deve estar exatamente igual ao cadastrado. Ex: X-Tomate, caso seja digitado x-tomate, X-TOMATE ou x-Tomate o pedido não será cadastrado, para que o cadastro seja bem sucecdido escreva exatamente como está cadastrado e ao clicar em finalizar, caso  as informações estejam corretas, irá aparecer um alert na tela com as informações do pedido cadastrado.
+   <img src="/img/orderEX1.png">
+   <img src="/img/orderEX2.png">
